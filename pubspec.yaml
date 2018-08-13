@@ -1,5 +1,5 @@
-name: otherside
-description: A new Flutter project.
+name: OtherSide
+description: An app that shows you what is on the other side of the Earth.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -16,6 +16,11 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+
+  rxdart: ^0.13.1
+  mapbox_gl: ^0.0.1
+  geolocator: ^1.4.0
+  simple_permissions: ^0.1.6
 
 dev_dependencies:
   flutter_test:
