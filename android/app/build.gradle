@@ -44,9 +44,6 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-        def mapboxAccessToken = localProperties.getProperty('mapbox.accessToken')
-        buildConfigField "String", "MAPBOX_ACCESS_TOKEN", "$mapboxAccessToken"
     }
 
     buildTypes {
@@ -63,7 +60,6 @@ flutter {
 }
 
 dependencies {
-    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:6.1.0-SNAPSHOT'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
